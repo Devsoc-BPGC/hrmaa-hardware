@@ -37,7 +37,7 @@ void loop() {
   else{
     time=millis();
     //Serial.println(time);
-    time = time * 1000;
+    time = time * 10000;
     BTserial.println(analogRead(ECGRead)+time);
     Serial.println(analogRead(ECGRead));
   }
